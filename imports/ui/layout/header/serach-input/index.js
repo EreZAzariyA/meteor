@@ -9,7 +9,7 @@ const SearchInput = ()=>{
   const navigate = useNavigate();
 
   const {usersAreReady,users } = useTracker (()=>{
-    const subscribe = Meteor.subscribe('user');
+    const subscribe = Meteor.subscribe('users.all');
     const usersList = Meteor.users.find({}).fetch();
     return{
       usersAreReady: subscribe.ready(),

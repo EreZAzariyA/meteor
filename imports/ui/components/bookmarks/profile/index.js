@@ -15,14 +15,14 @@ import "./style.css";
 import { BsMessenger } from "react-icons/bs";
 
 const Profile = ()=>{
-  const {isMobile, isResponsive} = useResize();
   const params = useParams();
-  const [toConfirm,setToConfirm] = useState(false);
-  const [hasRelationship,setHasRelationship] = useState(false);
+  const { isMobile, isResponsive } = useResize();
+  const [ toConfirm,setToConfirm ] = useState(false);
+  const [ hasRelationship,setHasRelationship ] = useState(false);
 
   const {userIsReady, user, friends, myProfile, requests} = useTracker(()=>{
-    const subscribe = Meteor.subscribe('user');
-    const thisUser = Meteor.users.find({_id:params.user_id}).fetch();
+    const subscribe = Meteor.subscribe('users.all');
+    const thisUser = Meteor.users.find(params.user_id).fetch();
     Meteor.subscribe('friends');
     Meteor.subscribe('requests.all');
     const userFriends = FriendsDB.find({'user_id':Meteor.userId()},{fields:{'friendsList':1}}).fetch();
@@ -37,7 +37,7 @@ const Profile = ()=>{
       userIsReady: subscribe.ready(),
       user: thisUser[0],
       friends: userFriends[0]?.friendsList,
-      myProfile: Meteor.userId() === thisUser[0]._id ? true : false,
+      myProfile: Meteor.userId() === thisUser[0]?._id ? true : false,
       requests: allRequests
     }
   },[params.user_id]);

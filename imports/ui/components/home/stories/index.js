@@ -9,7 +9,7 @@ import { StoriesSlider } from "./stories-slider/stories-slider";
 export const Stories = ({user})=>{
   
   const {storiesAreReady,stories} = useTracker(()=>{
-    const subscribe = Meteor.subscribe('stories.user');
+    const subscribe = Meteor.subscribe('user.stories');
     const allStories = StoriesDB.find({'user.id': user._id});
     return{
       storiesAreReady: subscribe.ready(),

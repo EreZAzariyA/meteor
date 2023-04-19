@@ -4,20 +4,23 @@ import { PostsDB } from "../../imports/api/posts/posts";
 import { StoriesDB } from "../../imports/api/stories/stories";
 
 
+Meteor.publish('users.all', () => {
+  return Meteor.users.find({});
+});
 Meteor.publish('user', () => {
-  return Meteor.users.find({ '_id': Meteor.userId() });
+  return Meteor.users.find(this.userId);
 });
 
 Meteor.publish('user.friends',()=>{
   if(!Meteor.user()) throw new Meteor.Error('No-user');
-  return FriendsDB.find({user_id:Meteor.userId()});
+  return FriendsDB.find(this.userId);
 });
 
 Meteor.publish('user.posts',() =>{
   if(!Meteor.user()) throw new Meteor.Error('No User');
-  return PostsDB.find({user_id:Meteor.userId()});
+  return PostsDB.find(this.userId);
 });
 
-Meteor.publish('stories.user',()=>{
-  return StoriesDB.find({'user._id':Meteor.userId()});
+Meteor.publish('user.stories',()=>{
+  return StoriesDB.find(this.userId);
 });

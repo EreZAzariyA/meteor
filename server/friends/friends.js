@@ -2,14 +2,9 @@ import { Meteor } from "meteor/meteor";
 import { FriendsDB } from "../../imports/api/friends/friends";
 import { RelationshipSteps } from "../../imports/api/helpers";
 
-Meteor.publish('friends',()=>{
+Meteor.publish('friends.all',()=>{
   if(!Meteor.user()) throw new Meteor.Error('No-user');
   return FriendsDB.find({});
-});
-
-Meteor.publish('friends.user',()=>{
-  if(!Meteor.user()) throw new Meteor.Error('No-user');
-  return FriendsDB.find(this.userId);
 });
 
 Meteor.methods({
