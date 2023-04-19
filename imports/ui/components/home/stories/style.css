@@ -1,0 +1,10 @@
+.stories_main_container{
+  height: 250px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.stories_main_container .stories_inner_container{
+  padding: 20px 25px 0px 25px;
+}

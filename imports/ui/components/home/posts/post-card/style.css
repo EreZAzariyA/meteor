@@ -1,0 +1,33 @@
+.post_card{
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 25px;
+}
+.post_card .ant-card-head{
+  display: flex;
+  flex-direction: row;
+}
+.post_card .ant-card-head .ant-card-head-wrapper .ant-card-head-title {
+  flex: none;
+  text-overflow: unset;
+  width: 100px;
+  white-space: normal;
+  font-weight: normal !important;
+}
+
+
+.post_card .comments_container .comments .ant-card.comments_card_container{
+  margin-bottom: 10px;
+}
+
+.post_card .comments_container .comments .ant-card.comments_card_container .ant-card-body{
+  padding-bottom: 0;
+}
+
+.post_card .comments_container .comments_card_container .comments_counter{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+}

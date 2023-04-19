@@ -1,0 +1,32 @@
+.main_layout {
+  text-align: center;
+  position: relative;
+  height: 100%;
+}
+.main_layout .header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.main_layout .ant-layout .ant-layout-content {
+  background-image: url('https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-52379.jpg?w=1380&t=st=1676722343~exp=1676722943~hmac=bdcea39849e5cec189829eb784f919292c6e638835056550c66d1cdd482d230c');
+  background-size: cover;
+  height: max-content;
+}
+
+.main_layout .ant-layout .ant-layout-sider.profile_sider {
+  height: 100%;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  bottom: 0;
+}
+
+.main_layout .ant-layout .ant-layout-sider.seconde-sider {
+  height: 100%;
+  position: fixed;
+  top: 65px;
+  right: 0;
+  bottom: 0;
+}

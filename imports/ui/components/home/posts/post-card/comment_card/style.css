@@ -1,0 +1,11 @@
+.comment_card .ant-card-body{
+  padding: 0 !important;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.comment_card{
+  display: flex;
+  flex-direction: row;
+}

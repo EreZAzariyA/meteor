@@ -1,0 +1,18 @@
+.friends_list_main_container {
+
+}
+
+.friends_list_main_container .friends_list_inner_container {
+
+}
+
+.friends_list_main_container .friends_list_inner_container .friends_list{
+  display: grid;
+}
+
+.friends_list_main_container .friends_list_inner_container .friends_list .friend_card{
+  /* width: 300px; */
+  /* display: flex;
+  align-items: center;
+  flex-direction: column; */
+}

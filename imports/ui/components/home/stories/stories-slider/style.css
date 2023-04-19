@@ -1,0 +1,14 @@
+.slider_main_container{
+  height: 230px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.slider_main_container .slider_inner_container {
+  height: 85%;
+}
+
+.slider_main_container .slider_inner_container .slider {
+  height: 100%;
+}

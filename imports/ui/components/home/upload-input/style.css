@@ -1,0 +1,27 @@
+.upload_main_container{
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.upload_main_container .upload_inner_container {
+  padding: 20px 25px 0px 25px;
+}
+.upload_main_container .upload_inner_container .upload_post_form{
+  width: 100%;
+}
+
+
+.upload_main_container .upload_inner_container .main .actions_menu{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.upload_main_container .upload_inner_container .main .input {
+  display: flex;
+  flex-direction: row;
+}

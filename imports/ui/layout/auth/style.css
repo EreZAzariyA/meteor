@@ -1,0 +1,52 @@
+.auth_layout {
+  height: 100%;
+  text-align: center;
+  background-image: url('https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-56228.jpg?w=900&t=st=1676718992~exp=1676719592~hmac=b65877c26551811a104e2b0821f28f0d62f8dc355cb7076d88dae0106f8c01f8');
+  background-repeat: repeat-y;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+.auth_layout .action {
+  color: white;
+}
+
+.auth_layout .header {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.auth_layout .header .logo_div {
+  margin-left: 40px;
+}
+
+.auth_layout .content{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth_form_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth_form_container .auth_form {
+  box-shadow: 0 10px 14px 10px rgba(0, 0, 0, 0.2);
+  width: min(100% - 50%, 350px);
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.auth_form_container .auth_form .auth_form_title{
+  text-align: justify;
+}
+

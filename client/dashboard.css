@@ -1,0 +1,6 @@
+.empty-menu-label {
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

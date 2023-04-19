@@ -1,0 +1,51 @@
+/*.profile_main_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_main_container .profile_inner_container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+=======
+} */
+
+/* .profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+/* .profile-container .profile{
+  width: 80%;
+} */
+
+/* 
+ .profile_menu .relationship-status{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.profile .user_details{
+>>>>>>> 420501e75d507074661cce9e4ee3cab7b3368c2f
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.profile .user_details .details {
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 10px;
+}
+
+.profile .profile_img {
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 20px;
+} */
